@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escritório de Advocacia | Consultoria Jurídica</title>
+    <!-- Inclui o Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fonte Inter para um visual moderno e profissional -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            /* Transição suave para cores de fundo e texto */
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+    </style>
+</head>
+<!-- Corpo com fundo claro fixo -->
+<body class="bg-gray-100 text-gray-800 antialiased">
+    
+    <!-- Cabeçalho (Header) com menu responsivo em tom escuro -->
+    <header class="bg-black shadow-lg sticky top-0 z-50 transition-colors duration-300">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <p class="text-2xl font-extrabold text-white hover:text-gray-300 transition-colors duration-300">
+                <span class="text-3xl font-extrabold">A</span>dvocacia
+            </p>
+            <div class="flex items-center space-x-4">
+                
+                <!-- Relógio Digital -->
+                <div id="digital-clock" class="hidden md:block text-white font-medium text-lg tracking-wide"></div>
+            </div>
+            
+            <!-- Links de navegação principais para desktop -->
+            <div class="hidden md:flex space-x-8 font-semibold text-white">
+                <a href="#servicos" class="hover:text-gray-300 transition-colors duration-300">Serviços</a>
+                <a href="#equipe" class="hover:text-gray-300 transition-colors duration-300">Equipe</a>
+            </div>
+            <!-- Botão de menu para mobile -->
+            <button id="mobile-menu-btn" class="md:hidden p-2 text-white hover:text-gray-300 transition-colors duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </nav>
+        <!-- Menu mobile deslizante -->
+        <div id="mobile-menu" class="hidden md:hidden bg-black shadow-lg py-4 transition-colors duration-300">
+            <a href="#servicos" class="block px-6 py-3 text-white hover:bg-gray-700 transition-colors duration-300">Serviços</a>
+            <a href="#equipe" class="block px-6 py-3 text-white hover:bg-gray-700 transition-colors duration-300">Equipe</a>
+        </div>
+    </header>
+
+    <!-- Seção Principal (Hero) com fundo preto -->
+    <section class="relative py-24 md:py-40 overflow-hidden flex items-center justify-center bg-black">
+        <div class="text-center z-10 p-4">
+            <h1 class="text-4xl md:text-6xl text-white">Jackson Advogado</h1>
+            <p class="mt-4 text-xl md:text-2xl text-white">Consultoria e Defesa com Excelência.</p>
+        </div>
+    </section>
+
+    <!-- Seção de Equipe em tom claro -->
+    <section id="equipe" class="bg-gray-200 py-20 transition-colors duration-300">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <!-- A imagem foi atualizada com a foto que você enviou. -->
+                <img src="jackson001.jpeg" alt="Jackson Vicente Advogado" class="rounded-3xl shadow-xl w-full h-auto object-cover" />
+            </div>
+            <div>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Conheça o Advogado</h2>
+                <p class="mt-4 text-gray-600 leading-relaxed">
+                    Dr. JACKSON VICENTE SILVA, é advogado, inscrito na Ordem dos Advogados do Brasil sob o nº 345.012, especializado em Direito Civil pela Universidade Presbiteriana Mackenzie, e Direito Processual Civil pela Universidade Damásio de Jesus, com vasta experiência em atuação em Direito Empresarial, Eleitoral, Trabalhista e Associações
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="equipe" class="bg-gray-200 py-20 transition-colors duration-300">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Endereço</h2>
+                <p class="mt-4 text-gray-600 leading-relaxed">
+                   A nossa estrutura enxuta facilita o atendimento eficiente, ágil, personalizado e dedicado única e exclusivamente ao cliente, como se cada um fosse único.
+​
+  O compromisso do escritório é buscar soluções rápidas com transparência, eficiência e ética com estrutura administrativa eficaz e atendimento próximo ao cliente.
+
+Estamos localizados em Guarulhos, à Avenida Tiradentes, 3859, Bom Clima, Guarulhos/SP, CEP: 07196-000
+                </p>
+            </div>
+            <div>
+                <!-- A imagem foi atualizada com a foto que você enviou. -->
+                <img src="Endereço.jpeg" alt="Jackson Vicente Advogado" class="rounded-3xl shadow-xl w-full h-auto object-cover" />
+            </div>
+        </div>
+    </section>
+    
+    <!-- Seção de Serviços em tom claro -->
+    <section id="servicos" class="bg-gray-100 py-20 transition-colors duration-300">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Minhas Áreas de Atuação</h2>
+            <p class="mt-4 text-gray-600 max-w-4xl mx-auto">
+                Oferecemos consultoria e representação jurídica completa, com uma abordagem personalizada para cada cliente.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+                
+                <!-- Item: Direito Civil -->
+                <div class="bg-white p-6 rounded-2xl transition-transform transform hover:scale-105 hover:bg-gray-100">
+                    <p class="text-xl font-bold text-gray-800">DIREITO CIVIL</p>
+                    <p class="mt-2 text-sm text-gray-600">Proteção de direitos e obrigações privadas.</p>
+                </div>
+                
+                <!-- Item: Direito de Família -->
+                <div class="bg-white p-6 rounded-2xl transition-transform transform hover:scale-105 hover:bg-gray-100">
+                    <p class="text-xl font-bold text-gray-800">DIREITO DE FAMÍLIA</p>
+                    <p class="mt-2 text-sm text-gray-600">Questões de casamento, divórcio e sucessões.</p>
+                </div>
+
+                <!-- Item: Direito Empresarial -->
+                <div class="bg-white p-6 rounded-2xl transition-transform transform hover:scale-105 hover:bg-gray-100">
+                    <p class="text-xl font-bold text-gray-800">DIREITO EMPRESARIAL</p>
+                    <p class="mt-2 text-sm text-gray-600">Regulamentação e consultoria para empresas.</p>
+                </div>
+
+                <!-- Item: Direito Tributário -->
+                <div class="bg-white p-6 rounded-2xl transition-transform transform hover:scale-105 hover:bg-gray-100">
+                    <p class="text-xl font-bold text-gray-800">DIREITO TRIBUTÁRIO</p>
+                    <p class="mt-2 text-sm text-gray-600">Orientação sobre impostos e contribuições.</p>
+                </div>
+
+                <!-- Item: Direito Trabalhista -->
+                <div class="bg-white p-6 rounded-2xl transition-transform transform hover:scale-105 hover:bg-gray-100">
+                    <p class="text-xl font-bold text-gray-800">DIREITO TRABALHISTA</p>
+                    <p class="mt-2 text-sm text-gray-600">Conflitos entre empregados e empregadores.</p>
+                </div>
+
+                <!-- Item: Direito Criminal -->
+                <div class="bg-white p-6 rounded-2xl transition-transform transform hover:scale-105 hover:bg-gray-100">
+                    <p class="text-xl font-bold text-gray-800">DIREITO CRIMINAL</p>
+                    <p class="mt-2 text-sm text-gray-600">Defesa em casos de crimes e delitos.</p>
+                </div>
+
+                <!-- Item: Consultoria -->
+                <div class="bg-white p-6 rounded-2xl transition-transform transform hover:scale-105 hover:bg-gray-100">
+                    <p class="text-xl font-bold text-gray-800">CONSULTORIA</p>
+                    <p class="mt-2 text-sm text-gray-600">Aconselhamento e planejamento jurídico.</p>
+                </div>
+
+                <!-- Item: Assessoria Jurídica -->
+                <div class="bg-white p-6 rounded-2xl transition-transform transform hover:scale-105 hover:bg-gray-100">
+                    <p class="text-xl font-bold text-gray-800">ASSESSORIA JURÍDICA</p>
+                    <p class="mt-2 text-sm text-gray-600">Suporte contínuo para negócios e pessoas.</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-black py-12">
+        <div class="container mx-auto px-6 text-center text-white">
+            <p>Contate Agora</p>
+            <p>E-mail: jacksonvicente@adv.oabsp.org.br</p>
+            <p>WhatsApp: (11) 98667-0641</p>
+        </div>
+    </footer>
+
+    <!-- Script para o relógio digital e menu mobile -->
+    <script>
+        // Função para atualizar o relógio digital
+        function updateClock() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            const timeString = `${hours}:${minutes}:${seconds}`;
+            document.getElementById('digital-clock').textContent = timeString;
+        }
+
+        // Atualiza o relógio a cada segundo
+        setInterval(updateClock, 1000);
+        // Chama a função uma vez ao carregar a página para evitar um atraso inicial
+        updateClock();
+
+        // Lógica para o menu de navegação mobile
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
